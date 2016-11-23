@@ -1,0 +1,180 @@
+<!--
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#9f9f9f"
+    tools:context="com.google.firebase.codelab.friendlychat.user_chat_rooms">
+
+    <TableRow
+        android:id="@+id/Row1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/cell11"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:onClick="cellClick"
+            android:background="@drawable/black"
+            android:clickable="true"/>
+        <TextView
+            android:id="@+id/cell12"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:onClick="cellClick"
+
+            android:background="@drawable/black"
+            android:clickable="true"/>
+        <TextView
+            android:id="@+id/cell13"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:background="@drawable/black"
+            android:onClick="cellClick"
+            android:clickable="true"/>
+
+
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/Row2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+        <TextView
+            android:background="@drawable/black"
+            android:id="@+id/cell21"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:onClick="cellClick"
+            android:clickable="true"/>
+        <TextView
+            android:background="@drawable/black"
+            android:id="@+id/cell22"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:onClick="cellClick"
+            android:clickable="true"/>
+        <TextView
+            android:id="@+id/cell23"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:onClick="cellClick"
+            android:background="@drawable/black"
+            android:clickable="true"/>
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/Row3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/cell31"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/black"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:onClick="cellClick"
+            android:clickable="true"/>
+        <TextView
+            android:id="@+id/cell32"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/black"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:onClick="cellClick"
+            android:clickable="true"/>
+        <TextView
+            android:id="@+id/cell33"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/black"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:onClick="cellClick"
+            android:clickable="true"/>
+
+    </TableRow>
+
+</TableLayout>
+!-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    >
+
+    <com.example.qenawi.board_games_chat_app.GameView
+        android:id="@+id/game_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:id="@+id/info_turn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dip"
+        />
+
+    <Button
+        android:id="@+id/next_turn"
+        android:text="I'm done"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        />
+
+</LinearLayout>
